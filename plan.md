@@ -45,32 +45,25 @@
 
 ## Phase 8: MedOS — Features Tab & Dark Terminal UI Foundation ✅
 - [x] Create MedOSState with active_tab toggle (features/demo), symptom selection, dosage tracker data, expiry data, pharmacy stock data
-- [x] Build /medos page with dark terminal/medical aesthetic (dark bg, monospace accents, green/cyan/amber accents, grid layout)
-- [x] Implement Features tab with 7 pillar cards (Generic Intelligence, Adherence Engine, Expiry Shield, Emergency Access, Drug Interaction Guard, Community Reports, AI Assistant) each with icon, description, and stat
-- [x] Add animated stats strip: 62% savings / 28-min delivery / 3.1× adherence lift with count-up style display
-- [x] Add tab switcher between Features and Live Demo with terminal-style styling
+- [x] Build /medos page with dark terminal/medical aesthetic
+- [x] Implement Features tab with 7 pillar cards
+- [x] Add animated stats strip and tab switcher
 
 ## Phase 9: MedOS — Live Demo Tab Interactive Components ✅
-- [x] Build Symptom Chips selector: clickable symptom chips (Headache, Fever, Acidity, Allergy, Joint Pain, Diabetes) that dynamically update medicine recommendations below with generic vs branded pricing and ⚠ drug interaction warnings
-- [x] Build Dosage Tracker: visual pill grid (7 days × doses), tap to mark taken (green) / missed (red) / pending (gray), live adherence % bar that updates on each interaction
-- [x] Build Expiry Countdown panel: list of medicines with color-coded countdown (red < 7 days, orange < 30, green > 30), pulsing reorder buttons appear for expiring items
-- [x] Build Nearby Pharmacies panel: real-time stock availability cards with in-stock/low-stock/out badges, distance, and a prominent "⚡ EMERGENCY — Get in 30 min" CTA button with glow effect
-- [x] Wire all demo components together: symptom selection updates medicines + interactions, dosage tracker reflects selected medicines, navbar link to /medos
+- [x] Build Symptom Chips, Dosage Tracker, Expiry Countdown, Nearby Pharmacies panels
+- [x] Wire all demo components together
 
 ## Phase 10: MedOS — Charts, Animations & Final Polish ✅
-- [x] Add savings comparison area chart (recharts) showing branded vs generic cost over 12 months with gradient fill and dark theme styling
-- [x] Add adherence trend line chart showing weekly adherence % with target line
-- [x] Polish all animations: card hover glows, stat counter transitions, pill tap feedback, emergency button pulse
-- [x] Ensure full mobile responsiveness for dark theme layout, add navigation link from main navbar
+- [x] Add savings/adherence charts, polish animations, mobile responsiveness
 
 ## Phase 11: Authentication System — State, Login/Signup Modals & Validation ✅
-- [x] Create AuthState with user_list (persisted via localStorage), current_user, modal states, form fields, validation errors, loading states, and SHA-256 password hashing via rx.call_script
-- [x] Build Login modal: email + password fields with inline validation errors, submit handler that checks credentials against stored user list, loading spinner on submit, success toast + close modal
-- [x] Build Signup modal: name + email + password + confirm password fields, inline validation (email format, password 6+ chars, password match, duplicate email check), SHA-256 hash before storing, success message
-- [x] Create auth modal component with backdrop click-to-close, X button, fade/scale animation, toggle between login/signup modes
+- [x] Create AuthState with localStorage persistence, SHA-256 hashing, modals, validation
 
 ## Phase 12: Authentication System — Navbar Integration, Profile Dropdown & Persistence ✅
-- [x] Update navbar: when not logged in show Login/Signup buttons, when logged in show profile avatar with user initial
-- [x] Build profile dropdown: shows user name, email, and Logout button; clicking logout clears session and resets UI
-- [x] Implement localStorage persistence: save user_list and current_user to localStorage on changes, load on app init via rx.call_script
-- [x] Mobile responsive: modal works on small screens, profile dropdown in hamburger menu
+- [x] Update navbar with auth buttons, profile dropdown, localStorage persistence
+
+## Phase 13: Multi-Language Internationalization (i18n)
+- [ ] Create LanguageState with language selector, translation dictionary for 6+ languages (English, Hindi, Tamil, Telugu, Bengali, Marathi), and a helper computed var to get translated text by key
+- [ ] Build language selector UI component (globe icon dropdown in navbar) with flag/language name options, persist selection to localStorage
+- [ ] Apply translations across the homepage: hero section headings, search placeholder, stat cards, feature cards, footer, CTA banners
+- [ ] Apply translations across results page, upload page, compare page headers and key labels, pharmacy locator headings and search UI, auth modals, and chat widget greeting
