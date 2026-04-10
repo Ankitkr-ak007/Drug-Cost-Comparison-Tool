@@ -4,6 +4,7 @@ from reflex_enterprise.components.map.types import latlng
 from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
+from app.components.auth_modal import auth_modal
 from app.states.pharmacy_state import PharmacyState, Pharmacy, CommunityReport
 
 
@@ -589,5 +590,6 @@ def locator_page() -> rx.Component:
         community_reporting_section(),
         footer(),
         chat_widget(),
+        auth_modal(),
         class_name="bg-white min-h-screen",
     )

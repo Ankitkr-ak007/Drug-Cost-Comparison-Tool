@@ -3,6 +3,7 @@ from app.states.compare_state import CompareState
 from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
+from app.components.auth_modal import auth_modal
 
 
 def alternative_row(alt: dict) -> rx.Component:
@@ -812,5 +813,6 @@ def compare_page() -> rx.Component:
         ),
         footer(),
         chat_widget(),
+        auth_modal(),
         class_name="bg-gray-50 min-h-screen",
     )

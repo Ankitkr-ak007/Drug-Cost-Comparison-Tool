@@ -62,3 +62,15 @@
 - [x] Add adherence trend line chart showing weekly adherence % with target line
 - [x] Polish all animations: card hover glows, stat counter transitions, pill tap feedback, emergency button pulse
 - [x] Ensure full mobile responsiveness for dark theme layout, add navigation link from main navbar
+
+## Phase 11: Authentication System — State, Login/Signup Modals & Validation ✅
+- [x] Create AuthState with user_list (persisted via localStorage), current_user, modal states, form fields, validation errors, loading states, and SHA-256 password hashing via rx.call_script
+- [x] Build Login modal: email + password fields with inline validation errors, submit handler that checks credentials against stored user list, loading spinner on submit, success toast + close modal
+- [x] Build Signup modal: name + email + password + confirm password fields, inline validation (email format, password 6+ chars, password match, duplicate email check), SHA-256 hash before storing, success message
+- [x] Create auth modal component with backdrop click-to-close, X button, fade/scale animation, toggle between login/signup modes
+
+## Phase 12: Authentication System — Navbar Integration, Profile Dropdown & Persistence ✅
+- [x] Update navbar: when not logged in show Login/Signup buttons, when logged in show profile avatar with user initial
+- [x] Build profile dropdown: shows user name, email, and Logout button; clicking logout clears session and resets UI
+- [x] Implement localStorage persistence: save user_list and current_user to localStorage on changes, load on app init via rx.call_script
+- [x] Mobile responsive: modal works on small screens, profile dropdown in hamburger menu

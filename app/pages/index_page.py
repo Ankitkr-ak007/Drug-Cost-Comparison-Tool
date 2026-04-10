@@ -4,7 +4,9 @@ from app.components.footer import footer
 from app.components.search_bar import search_section
 from app.components.chat_widget import chat_widget
 from app.components.expiry_badge import expiry_badge
+from app.components.auth_modal import auth_modal
 from app.states.medicine_state import MedicineState, Medicine
+from app.states.auth_state import AuthState
 
 
 def stat_card(value: str, label: str, icon_name: str) -> rx.Component:
@@ -194,5 +196,7 @@ def index_page() -> rx.Component:
         ),
         footer(),
         chat_widget(),
+        auth_modal(),
+        on_mount=AuthState.init_auth,
         class_name="bg-white min-h-screen",
     )

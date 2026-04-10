@@ -3,6 +3,7 @@ from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
 from app.components.expiry_badge import expiry_badge
+from app.components.auth_modal import auth_modal
 from app.states.medicine_state import MedicineState, ExtractedMedicine
 
 UPLOAD_ID = "prescription_upload"
@@ -303,5 +304,6 @@ def upload_page() -> rx.Component:
         ),
         footer(),
         chat_widget(),
+        auth_modal(),
         class_name="bg-gray-50 min-h-screen",
     )
