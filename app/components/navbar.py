@@ -1,6 +1,7 @@
 import reflex as rx
 from app.states.medicine_state import MedicineState
 from app.states.auth_state import AuthState
+from app.states.checkout_state import CheckoutState
 
 
 def nav_link(label: str, href: str) -> rx.Component:
@@ -81,6 +82,21 @@ def navbar() -> rx.Component:
                     nav_link("Pharmacy Locator", "/locator"),
                     nav_link("Community", "#"),
                     rx.el.a(
+                        rx.el.div(
+                            rx.icon("shopping-bag", class_name="h-5 w-5"),
+                            rx.cond(
+                                CheckoutState.cart_item_count > 0,
+                                rx.el.span(
+                                    CheckoutState.cart_item_count,
+                                    class_name="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center",
+                                ),
+                            ),
+                            class_name="relative flex items-center",
+                        ),
+                        href="/checkout",
+                        class_name="text-gray-600 hover:text-blue-600 transition-colors",
+                    ),
+                    rx.el.a(
                         "MedOS ",
                         rx.el.span(
                             "PRO",
@@ -151,6 +167,21 @@ def navbar() -> rx.Component:
                         rx.el.a(
                             "Locator",
                             href="/locator",
+                            class_name="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md",
+                        ),
+                        rx.el.a(
+                            rx.el.div(
+                                "Cart",
+                                rx.cond(
+                                    CheckoutState.cart_item_count > 0,
+                                    rx.el.span(
+                                        CheckoutState.cart_item_count,
+                                        class_name="ml-2 bg-blue-100 text-blue-600 text-xs font-bold px-2 py-0.5 rounded-full",
+                                    ),
+                                ),
+                                class_name="flex items-center",
+                            ),
+                            href="/checkout",
                             class_name="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md",
                         ),
                         rx.el.a(

@@ -83,8 +83,8 @@ def alternative_row(med: dict) -> rx.Component:
     savings_amt = med["brand_price"].to(float) - med["generic_price"].to(float)
     savings_pct = rx.cond(
         med["brand_price"].to(float) > 0,
-        round(savings_amt / med["brand_price"].to(float) * 100, 1),
-        0,
+        savings_amt / med["brand_price"].to(float) * 100,
+        0.0,
     )
     return rx.el.tr(
         rx.el.td(

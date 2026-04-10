@@ -6,6 +6,7 @@ from app.pages.upload_page import upload_page
 from app.pages.locator_page import locator_page
 from app.pages.compare_page import compare_page
 from app.pages.medos_page import medos_page
+from app.pages.checkout_page import checkout_page
 
 app = rxe.App(
     theme=rx.theme(appearance="light"),
@@ -30,3 +31,4 @@ app.add_page(upload_page, route="/upload")
 app.add_page(locator_page, route="/locator")
 app.add_page(compare_page, route="/compare")
 app.add_page(medos_page, route="/medos")
+app.add_page(checkout_page, route="/checkout")

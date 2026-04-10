@@ -62,8 +62,7 @@
 ## Phase 12: Authentication System — Navbar Integration, Profile Dropdown & Persistence ✅
 - [x] Update navbar with auth buttons, profile dropdown, localStorage persistence
 
-## Phase 13: Multi-Language Internationalization (i18n)
-- [ ] Create LanguageState with language selector, translation dictionary for 6+ languages (English, Hindi, Tamil, Telugu, Bengali, Marathi), and a helper computed var to get translated text by key
-- [ ] Build language selector UI component (globe icon dropdown in navbar) with flag/language name options, persist selection to localStorage
-- [ ] Apply translations across the homepage: hero section headings, search placeholder, stat cards, feature cards, footer, CTA banners
-- [ ] Apply translations across results page, upload page, compare page headers and key labels, pharmacy locator headings and search UI, auth modals, and chat widget greeting
+## Phase 13: Checkout Flow with Address Form, Map & Delivery Route ✅
+- [x] Create CheckoutState with address fields (house_no, area, landmark, pincode), shop coordinates (fixed Jamshedpur location), user coordinates (geocoded from address or GPS), order list, polyline route positions, map center/zoom, geocoding logic via Nominatim, and "Use My Location" geolocation support
+- [x] Build /checkout page with: order summary sidebar showing cart items, address input form (House No, Area, Landmark, Pincode) with validation, "Use GPS" button, embedded rxe.map showing shop marker + user marker + polyline route between them, and a submit order button that saves address + coordinates to order object
+- [x] Register /checkout route in app.py, add Checkout/Cart link to navbar, wire address form submission to geocode address → update map markers + polyline → save to order
