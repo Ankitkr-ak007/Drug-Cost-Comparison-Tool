@@ -1,6 +1,7 @@
 import reflex as rx
 from app.states.medos_state import MedOSState, SAVINGS_CHART_DATA
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 
 
 def stat_card(value: str, label: str, accent: str) -> rx.Component:
@@ -836,5 +837,6 @@ def medos_page() -> rx.Component:
         ),
         rx.cond(MedOSState.active_tab == "features", features_tab(), demo_tab()),
         auth_modal(),
+        cart_drawer(),
         class_name="bg-gray-950 min-h-screen text-gray-100 font-sans",
     )

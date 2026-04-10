@@ -6,6 +6,7 @@ from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 
 
 def cart_item_row(item: dict) -> rx.Component:
@@ -459,6 +460,7 @@ def map_section() -> rx.Component:
 def checkout_page() -> rx.Component:
     return rx.el.main(
         navbar(),
+        cart_drawer(),
         rx.el.div(
             rx.el.div(
                 rx.el.a(

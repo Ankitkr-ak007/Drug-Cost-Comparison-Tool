@@ -81,9 +81,10 @@ def navbar() -> rx.Component:
                     nav_link("Upload Prescription", "/upload"),
                     nav_link("Pharmacy Locator", "/locator"),
                     nav_link("Community", "#"),
-                    rx.el.a(
+                    nav_link("Shop", "/shop"),
+                    rx.el.button(
                         rx.el.div(
-                            rx.icon("shopping-bag", class_name="h-5 w-5"),
+                            rx.icon("shopping-cart", class_name="h-5 w-5"),
                             rx.cond(
                                 CheckoutState.cart_item_count > 0,
                                 rx.el.span(
@@ -93,7 +94,7 @@ def navbar() -> rx.Component:
                             ),
                             class_name="relative flex items-center",
                         ),
-                        href="/checkout",
+                        on_click=CheckoutState.toggle_cart_drawer,
                         class_name="text-gray-600 hover:text-blue-600 transition-colors",
                     ),
                     rx.el.a(
@@ -170,6 +171,11 @@ def navbar() -> rx.Component:
                             class_name="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md",
                         ),
                         rx.el.a(
+                            "Shop",
+                            href="/shop",
+                            class_name="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md",
+                        ),
+                        rx.el.button(
                             rx.el.div(
                                 "Cart",
                                 rx.cond(
@@ -181,8 +187,8 @@ def navbar() -> rx.Component:
                                 ),
                                 class_name="flex items-center",
                             ),
-                            href="/checkout",
-                            class_name="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md",
+                            on_click=CheckoutState.toggle_cart_drawer,
+                            class_name="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md",
                         ),
                         rx.el.a(
                             "MedOS ",

@@ -4,6 +4,7 @@ from app.components.footer import footer
 from app.components.chat_widget import chat_widget
 from app.components.expiry_badge import expiry_badge
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 from app.states.medicine_state import MedicineState, ExtractedMedicine
 
 UPLOAD_ID = "prescription_upload"
@@ -192,6 +193,7 @@ def results_summary() -> rx.Component:
 def upload_page() -> rx.Component:
     return rx.el.main(
         navbar(),
+        cart_drawer(),
         rx.el.div(
             rx.el.div(
                 rx.el.div(

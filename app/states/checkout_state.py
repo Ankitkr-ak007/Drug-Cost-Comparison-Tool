@@ -55,6 +55,203 @@ CITY_PHARMACIES = {
         "address": "Fergusson College Road, Pune 411004",
     },
 }
+SHOP_MEDICINES = [
+    {
+        "id": "1",
+        "brand_name": "Crocin",
+        "generic_name": "Paracetamol",
+        "salt_composition": "Paracetamol 500mg",
+        "brand_price": 40.0,
+        "generic_price": 12.0,
+        "manufacturer": "GSK",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Analgesic",
+        "expiry_date": "2025-08-15",
+    },
+    {
+        "id": "2",
+        "brand_name": "Augmentin 625",
+        "generic_name": "Amoxycillin + Clavulanic Acid",
+        "salt_composition": "Amoxycillin (500mg) + Clavulanic Acid (125mg)",
+        "brand_price": 200.0,
+        "generic_price": 85.0,
+        "manufacturer": "GSK",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Antibiotic",
+        "expiry_date": "2025-10-15",
+    },
+    {
+        "id": "3",
+        "brand_name": "Combiflam",
+        "generic_name": "Ibuprofen + Paracetamol",
+        "salt_composition": "Ibuprofen (400mg) + Paracetamol (325mg)",
+        "brand_price": 45.0,
+        "generic_price": 15.0,
+        "manufacturer": "Sanofi",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Analgesic",
+        "expiry_date": "2025-06-01",
+    },
+    {
+        "id": "4",
+        "brand_name": "Allegra 120mg",
+        "generic_name": "Fexofenadine",
+        "salt_composition": "Fexofenadine (120mg)",
+        "brand_price": 180.0,
+        "generic_price": 60.0,
+        "manufacturer": "Sanofi",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Antihistamine",
+        "expiry_date": "2025-12-01",
+    },
+    {
+        "id": "5",
+        "brand_name": "Pan 40",
+        "generic_name": "Pantoprazole",
+        "salt_composition": "Pantoprazole (40mg)",
+        "brand_price": 150.0,
+        "generic_price": 40.0,
+        "manufacturer": "Alkem",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Antacid",
+        "expiry_date": "2025-08-01",
+    },
+    {
+        "id": "6",
+        "brand_name": "Calpol 500",
+        "generic_name": "Paracetamol",
+        "salt_composition": "Paracetamol 500mg",
+        "brand_price": 35.0,
+        "generic_price": 12.0,
+        "manufacturer": "GSK",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Analgesic",
+        "expiry_date": "2026-03-20",
+    },
+    {
+        "id": "7",
+        "brand_name": "Glycomet 500",
+        "generic_name": "Metformin",
+        "salt_composition": "Metformin (500mg)",
+        "brand_price": 60.0,
+        "generic_price": 18.0,
+        "manufacturer": "USV",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Anti-Diabetic",
+        "expiry_date": "2025-08-20",
+    },
+    {
+        "id": "8",
+        "brand_name": "Telma 40",
+        "generic_name": "Telmisartan",
+        "salt_composition": "Telmisartan (40mg)",
+        "brand_price": 110.0,
+        "generic_price": 35.0,
+        "manufacturer": "Glenmark",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Hypertension",
+        "expiry_date": "2026-06-15",
+    },
+    {
+        "id": "9",
+        "brand_name": "Voveran SR 100",
+        "generic_name": "Diclofenac",
+        "salt_composition": "Diclofenac (100mg)",
+        "brand_price": 95.0,
+        "generic_price": 30.0,
+        "manufacturer": "Novartis",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Pain Relief",
+        "expiry_date": "2025-09-15",
+    },
+    {
+        "id": "10",
+        "brand_name": "Taxim-O 200",
+        "generic_name": "Cefixime",
+        "salt_composition": "Cefixime (200mg)",
+        "brand_price": 160.0,
+        "generic_price": 70.0,
+        "manufacturer": "Alkem",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Antibiotic",
+        "expiry_date": "2025-11-20",
+    },
+    {
+        "id": "11",
+        "brand_name": "Dolo 650",
+        "generic_name": "Paracetamol",
+        "salt_composition": "Paracetamol 650mg",
+        "brand_price": 30.0,
+        "generic_price": 15.0,
+        "manufacturer": "Micro Labs",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Analgesic",
+        "expiry_date": "2025-07-25",
+    },
+    {
+        "id": "12",
+        "brand_name": "Limcee",
+        "generic_name": "Vitamin C",
+        "salt_composition": "Vitamin C (500mg)",
+        "brand_price": 25.0,
+        "generic_price": 10.0,
+        "manufacturer": "Abbott",
+        "dosage": "Chewable Tablet",
+        "verified": True,
+        "category": "Vitamin",
+        "expiry_date": "2026-12-31",
+    },
+    {
+        "id": "13",
+        "brand_name": "Azithral 500",
+        "generic_name": "Azithromycin",
+        "salt_composition": "Azithromycin (500mg)",
+        "brand_price": 120.0,
+        "generic_price": 55.0,
+        "manufacturer": "Alembic",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Antibiotic",
+        "expiry_date": "2025-10-10",
+    },
+    {
+        "id": "14",
+        "brand_name": "Thyronorm 50",
+        "generic_name": "Levothyroxine",
+        "salt_composition": "Levothyroxine (50mcg)",
+        "brand_price": 140.0,
+        "generic_price": 50.0,
+        "manufacturer": "Abbott",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Thyroid",
+        "expiry_date": "2026-01-15",
+    },
+    {
+        "id": "15",
+        "brand_name": "Atorva 10",
+        "generic_name": "Atorvastatin",
+        "salt_composition": "Atorvastatin (10mg)",
+        "brand_price": 85.0,
+        "generic_price": 25.0,
+        "manufacturer": "Zydus",
+        "dosage": "Tablet",
+        "verified": True,
+        "category": "Cholesterol",
+        "expiry_date": "2026-05-10",
+    },
+]
 
 
 class CheckoutState(rx.State):
@@ -80,12 +277,72 @@ class CheckoutState(rx.State):
     order_submitted: bool = False
     order_loading: bool = False
     saved_order: dict = {}
-    cart_items: list[dict] = [
-        {"name": "Paracetamol 500mg (Generic)", "qty": 2, "price": 8.0},
-        {"name": "Pantoprazole 40mg (Generic)", "qty": 1, "price": 18.0},
-        {"name": "Metformin 500mg (Generic)", "qty": 1, "price": 10.0},
-    ]
+    cart_items: list[dict] = []
     is_gps_loading: bool = False
+    shop_search_query: str = ""
+    shop_category_filter: str = "All"
+    shop_sort_by: str = "savings"
+    show_cart_drawer: bool = False
+
+    @rx.var
+    def available_categories(self) -> list[str]:
+        cats = set((m["category"] for m in SHOP_MEDICINES))
+        return ["All"] + sorted(list(cats))
+
+    @rx.var
+    def filtered_shop_medicines(self) -> list[dict]:
+        query = self.shop_search_query.lower()
+        filtered = []
+        for m in SHOP_MEDICINES:
+            if query and (
+                not (
+                    query in m["brand_name"].lower()
+                    or query in m["generic_name"].lower()
+                    or query in m["salt_composition"].lower()
+                )
+            ):
+                continue
+            if (
+                self.shop_category_filter != "All"
+                and m["category"] != self.shop_category_filter
+            ):
+                continue
+            filtered.append(m)
+        if self.shop_sort_by == "savings":
+            filtered.sort(
+                key=lambda x: x["brand_price"] - x["generic_price"], reverse=True
+            )
+        elif self.shop_sort_by == "price_low":
+            filtered.sort(key=lambda x: x["generic_price"])
+        elif self.shop_sort_by == "price_high":
+            filtered.sort(key=lambda x: x["generic_price"], reverse=True)
+        elif self.shop_sort_by == "name":
+            filtered.sort(key=lambda x: x["brand_name"])
+        return filtered
+
+    @rx.event
+    def set_shop_search(self, query: str):
+        self.shop_search_query = query
+
+    @rx.event
+    def set_shop_category(self, category: str):
+        self.shop_category_filter = category
+
+    @rx.event
+    def set_shop_sort(self, sort: str):
+        self.shop_sort_by = sort
+
+    @rx.event
+    def toggle_cart_drawer(self):
+        self.show_cart_drawer = not self.show_cart_drawer
+
+    @rx.event
+    def close_cart_drawer(self):
+        self.show_cart_drawer = False
+
+    @rx.event
+    def open_cart_drawer(self):
+        self.show_cart_drawer = True
 
     @rx.var
     def cart_total(self) -> float:

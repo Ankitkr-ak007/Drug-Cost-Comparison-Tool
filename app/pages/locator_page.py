@@ -5,6 +5,7 @@ from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 from app.states.pharmacy_state import PharmacyState, Pharmacy, CommunityReport
 
 
@@ -548,6 +549,7 @@ def community_reporting_section() -> rx.Component:
 def locator_page() -> rx.Component:
     return rx.el.main(
         navbar(),
+        cart_drawer(),
         rx.el.div(
             rx.el.div(
                 rx.el.span(

@@ -5,6 +5,7 @@ from app.components.search_bar import search_section
 from app.components.chat_widget import chat_widget
 from app.components.expiry_badge import expiry_badge
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 from app.states.medicine_state import MedicineState, Medicine
 from app.states.auth_state import AuthState
 
@@ -53,6 +54,7 @@ def expiring_medicine_item(med: Medicine) -> rx.Component:
 def index_page() -> rx.Component:
     return rx.el.main(
         navbar(),
+        cart_drawer(),
         rx.el.div(
             rx.el.div(
                 rx.el.div(

@@ -63,6 +63,12 @@
 - [x] Update navbar with auth buttons, profile dropdown, localStorage persistence
 
 ## Phase 13: Checkout Flow with Address Form, Map & Delivery Route ✅
-- [x] Create CheckoutState with address fields (house_no, area, landmark, pincode), shop coordinates (fixed Jamshedpur location), user coordinates (geocoded from address or GPS), order list, polyline route positions, map center/zoom, geocoding logic via Nominatim, and "Use My Location" geolocation support
-- [x] Build /checkout page with: order summary sidebar showing cart items, address input form (House No, Area, Landmark, Pincode) with validation, "Use GPS" button, embedded rxe.map showing shop marker + user marker + polyline route between them, and a submit order button that saves address + coordinates to order object
-- [x] Register /checkout route in app.py, add Checkout/Cart link to navbar, wire address form submission to geocode address → update map markers + polyline → save to order
+- [x] Create CheckoutState with cart management, city selection, geocoding, polyline route
+- [x] Build /checkout page with order summary, address form, map with markers and route
+- [x] Register /checkout route, add cart icon to navbar
+
+## Phase 14: Online Medicine Shop Page ✅
+- [x] Create a new /shop page with a full browsable medicine catalog using all_medicines from MedicineState — each medicine displayed as a product card showing brand name, generic name, salt composition, brand vs generic price comparison, savings percentage badge, category tag, and an "Add to Cart" button
+- [x] Add category filter tabs (All, Analgesic, Antibiotic, Antacid, etc.), a search/filter bar, and sort options (by price, savings, name) to let users browse and find medicines easily
+- [x] Integrate a slide-out cart drawer/sidebar that opens when the cart icon is clicked — showing all added items with qty controls, remove buttons, subtotals, total, and a "Proceed to Checkout" button that navigates to /checkout
+- [x] Add the /shop route to app.py and a "Shop" nav link in navbar; ensure the cart icon in navbar opens the cart drawer instead of directly navigating to /checkout

@@ -4,6 +4,7 @@ from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 
 
 def alternative_row(alt: dict) -> rx.Component:
@@ -100,6 +101,7 @@ def compare_page() -> rx.Component:
     ]
     return rx.el.main(
         navbar(),
+        cart_drawer(),
         rx.el.div(
             rx.el.div(
                 rx.el.span(

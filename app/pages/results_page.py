@@ -5,6 +5,7 @@ from app.components.navbar import navbar
 from app.components.footer import footer
 from app.components.chat_widget import chat_widget
 from app.components.auth_modal import auth_modal
+from app.components.cart_drawer import cart_drawer
 from app.components.expiry_badge import expiry_badge, expiry_countdown_card
 
 
@@ -140,6 +141,7 @@ def alternative_row(med: dict) -> rx.Component:
 def results_page() -> rx.Component:
     return rx.el.main(
         navbar(),
+        cart_drawer(),
         medicine_header(),
         rx.el.div(
             rx.el.div(
